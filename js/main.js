@@ -161,3 +161,26 @@ function copyPasswordbudu() {
   }
   
   lengthSlider.addEventListener("input", inStrong);
+
+
+let hoverElement = document.querySelector(".boxone");
+
+let hoverElementtwo = document.getElementById('boxtwo');
+
+hoverElement.addEventListener('mouseenter', function() {
+    hoverElementtwo.classList.add('active');
+    hoverElement.classList.remove('active');
+});
+hoverElement.addEventListener('mouseleave', function() {
+    hoverElementtwo.classList.remove('active');
+    hoverElement.classList.add('active');
+});
+
+hoverElementtwo.addEventListener('mouseenter', function() {
+    hoverElement.classList.add('active');
+    hoverElementtwo.classList.remove('active');
+});
+hoverElementtwo.addEventListener('mouseleave', function() {
+    hoverElement.classList.remove('active');
+    hoverElementtwo.classList.add('active');
+});
