@@ -45,6 +45,61 @@ body {
     border-radius: 4px;
 }
 
+
+
+/* #boxone{
+  filter: blur(3px);
+  transition: filter 0.3s ease;
+}  */
+
+#boxone{
+  filter: blur(0px);
+} 
+
+#boxone.active{
+  filter: blur(3px);
+  transition: filter 0.3s ease;
+}
+
+#boxtwo{
+  filter: blur(0px);
+} 
+
+#boxtwo.active{
+  filter: blur(3px);
+  transition: filter 0.3s ease;
+}
+
+/* #boxone:hover,
+#boxtwo:hover{
+  filter: blur(0px);
+}  */
+
+#boxtwo {
+  background-image: url(../img/w3.png);
+  width: 375px;
+  height: 552px;
+  background-repeat: no-repeat;
+  background-size: 375px 589px;
+}
+
+/* #bgbox {
+  background-image: url();
+  width: 375px;
+  height: 275px;
+  background-repeat: no-repeat;
+} */
+
+/* .boxone {
+  position: relative;
+} */
+
+/* .bgboxone {
+  position: absolute;
+
+
+} */
+
 .hbox {
 
 }
@@ -135,6 +190,10 @@ input::placeholder {
     border-style: none;
 }
 
+.boxone {
+  height: 275px;
+}
+
 .boxtwo,
 .boxone {
     position: relative;
@@ -142,8 +201,12 @@ input::placeholder {
     flex-basis: 33%;
 }
 
-.boxtwo {
+/* .boxtwo {
     padding-left: 5px;
+} */
+
+.boxone {
+  padding-right: 5px;
 }
 
 .tooltiptext {
@@ -517,6 +580,7 @@ input[type=range].passrange {
     /* height: 2.2em; */
     height: 30px;
     -webkit-appearance: none;
+    background: transparent;
   }
   
   /*progress support*/
@@ -697,3 +761,50 @@ input[type=range].passrange {
     border-color: #c1c1c1;
   }
   
+  @media (max-width: 768px) {
+    #boxone {
+      display: none;
+    }
+
+    .wrapper {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    body {
+      /* justify-content: center; */
+      display: block;
+      width: 100%;
+    }
+
+    /* .bigbox {
+      display: block;
+    } */
+
+    #boxtwo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100vw;
+      /* width: 100vh; */
+    }
+
+    #boxtwo {
+      background-image: url(../img/bigw3.png);
+      /* width: 375px;
+      height: 552px; */
+      background-repeat: no-repeat;
+      /* background-size: 600px 589px; */
+      background-size: 600px 591px;
+    }
+  }
+
+  @media (max-width: 376px) {
+    #boxtwo {
+      background-image: url(../img/w3.png);
+      width: 375px;
+      height: 552px;
+      background-repeat: no-repeat;
+      background-size: 375px 589px;
+    }
+  }
