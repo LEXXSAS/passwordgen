@@ -51,7 +51,7 @@ body {
   filter: blur(3px);
   transition: filter 0.3s ease;
 }  */
-
+/*
 #boxone{
   filter: blur(0px);
 } 
@@ -68,7 +68,7 @@ body {
 #boxtwo.active{
   filter: blur(3px);
   transition: filter 0.3s ease;
-}
+}*/
 
 /* #boxone:hover,
 #boxtwo:hover{
