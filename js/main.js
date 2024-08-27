@@ -69,7 +69,7 @@ function genPasswordtwo() {
 
     function buduCCpasswordSlice () {
         let buduccPass = passwordtwobox.substring(1, passwordtwobox.length);
-        buduccPassvalue = "Buducc" + `${buduccPass}`;
+        buduccPassvalue = "Yourdomain" + `${buduccPass}`;
         console.log(buduccPassvalue)
     }
     buduCCpasswordSlice()
